@@ -12,6 +12,7 @@ Egg.mass.avg.size = aggregate(Eggs_in_egg_mass ~ Week*Tank, data=tanks, FUN=mean
 Egg.total = aggregate(Eggs_in_egg_mass ~ Week*Tank, data=tanks, FUN=sum, drop=FALSE)
 Egg.total
 
+#calculate the average size of each eggmass per tank per week
 
 Egg.mass.avg.size
 
