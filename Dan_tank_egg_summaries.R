@@ -5,6 +5,8 @@ tanks = read.csv("Summer_2018_Tank_Experiment_Data_Eggs.csv")
 
 head(tanks)
 
+
+#Count the number of eggs in each tank each week
 Egg.mass.counts = aggregate(Eggs_in_egg_mass ~ Week*Tank, data=tanks, FUN=length, drop=FALSE)
 
 Egg.mass.avg.size = aggregate(Eggs_in_egg_mass ~ Week*Tank, data=tanks, FUN=mean, drop=FALSE)
